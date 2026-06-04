@@ -4,4 +4,10 @@ provider "aws" {
 
 resource "aws_s3_bucket" "demo" {
   bucket = "aizada-devops-cicd--demo-bucket-2026"
+
+tags = {
+  Project     = "Terraform CI/CD"
+  Environment = "Dev"
+  Owner       = "Aizada"
+  }
 }
